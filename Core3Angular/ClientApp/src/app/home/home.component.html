@@ -1,0 +1,18 @@
+<table *ngIf ="Students && Students.length > 0">
+  <thead>
+    <tr>
+      <th style="border:1px solid #4cff00">Serial</th>
+      <th style="border:1px solid #4cff00">Id</th>
+      <th style="border:1px solid #4cff00">Name</th>
+      <th style="border:1px solid #4cff00">Roll</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor ="let student of Students, let i = index ">
+      <td style="border:1px solid #ff00dc">{{i+1}}</td>
+      <td style="border:1px solid #ff00dc">{{student.id}}</td>
+      <td style="border:1px solid #ff00dc">{{student.name}}</td>
+      <td style="border:1px solid #ff00dc">{{student.roll}}</td>
+    </tr>
+  </tbody>
+</table>
